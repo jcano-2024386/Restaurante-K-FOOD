@@ -1,21 +1,23 @@
-K-Food — Sistema de Gestión de Restaurante
+# 🍔 K-Food — Sistema de Gestión de Restaurante
 
-Kinal | Práctica Supervisada 2026 | Profesor: Braulio Echeverría**
+> REST API para la administración de una hamburguesería: pedidos, reservaciones, menús, mesas y más.
 
+**Kinal | Práctica Supervisada 2026 | Profesor: Braulio Echeverría**
 
-
-Jeferson André Cano López 2024386  Scrum Master  Backend 
-Otto Raúl Díaz Batres 2024248  Product Owner  Frontend 
+| Integrante | Carné | Rol |
+|---|---|---|
+| Jeferson André Cano López | 2024386 | Scrum Master / Backend |
+| Otto Raúl Díaz Batres | 2024248 | Product Owner / Frontend |
 
 ---
 
-Tecnologías
+## 🛠️ Tecnologías
 
 `Node.js` `Express.js` `MongoDB` `Mongoose` `JWT` `bcryptjs` `pnpm`
 
 ---
 
-Instalación
+## 🚀 Instalación
 
 ```bash
 git clone https://github.com/tu-usuario/k-food.git
@@ -30,7 +32,7 @@ pnpm dev
 
 ---
 
-Variables de Entorno
+## ⚙️ Variables de Entorno
 
 ```env
 PORT=3006
@@ -43,36 +45,43 @@ JWT_AUDIENCE=GestorRestauranteApp
 
 ---
 
-Endpoints
+## 🔌 Endpoints
 
-Los endpoints protegidos requieren: `Authorization: Bearer <token>`
+> Los endpoints protegidos requieren: `Authorization: Bearer <token>`
 
-Auth | `/auth` | register, login, profile, users CRUD |
-Restaurantes | `/restaurantes` | CRUD completo |
-Sucursales | `/sucursales` | CRUD + filtro por restaurante |
-Mesas | `/mesas` | CRUD + filtro por sucursal y disponibilidad |
-Categorías | `/categorias` | CRUD + filtro por restaurante |
-Menú | `/menus` | CRUD + filtro por restaurante |
-Pedidos | `/pedidos` | Crear, listar, cambiar estado |
-Reservaciones | `/reservaciones` | Crear, confirmar, cancelar |
-Eventos | `/eventos` | CRUD + filtro por sucursal |
-Estadísticas | `/estadisticas` | Resumen general e ingresos |
+| Módulo | Ruta Base | Operaciones |
+|---|---|---|
+| 🔐 Auth | `/auth` | register, login, profile, users CRUD |
+| 🏢 Restaurantes | `/restaurantes` | CRUD completo |
+| 🏪 Sucursales | `/sucursales` | CRUD + filtro por restaurante |
+| 🪑 Mesas | `/mesas` | CRUD + filtro por sucursal y disponibilidad |
+| 📂 Categorías | `/categorias` | CRUD + filtro por restaurante |
+| 🍔 Menú | `/menus` | CRUD + filtro por restaurante |
+| 🧾 Pedidos | `/pedidos` | Crear, listar, cambiar estado |
+| 📅 Reservaciones | `/reservaciones` | Crear, confirmar, cancelar |
+| 🎉 Eventos | `/eventos` | CRUD + filtro por sucursal |
+| 📊 Estadísticas | `/estadisticas` | Resumen general e ingresos |
 
-
----
-
-Roles
- `ADMIN` | Total |
- `GERENTE` | Menús, pedidos, sucursales, eventos, reservaciones |
- `MESERO` | Crear y actualizar pedidos |
- `CLIENTE` | Ver menú, hacer y cancelar reservaciones |
+**Estados de Pedido:** `PENDIENTE` → `EN_PROCESO` → `LISTO` → `ENTREGADO` / `CANCELADO`  
+**Estados de Reservación:** `PENDIENTE` → `CONFIRMADA` → `COMPLETADA` / `CANCELADA`
 
 ---
 
-Sprints SCRUM
+## 👤 Roles
 
+| Rol | Acceso |
+|---|---|
+| `ADMIN` | Total |
+| `GERENTE` | Menús, pedidos, sucursales, eventos, reservaciones |
+| `MESERO` | Crear y actualizar pedidos |
+| `CLIENTE` | Ver menú, hacer y cancelar reservaciones |
 
+---
 
+## 📅 Sprints SCRUM
+
+| Sprint | Semanas | Objetivo |
+|---|---|---|
 | 1 | 1–2 | Auth, JWT, Roles |
 | 2 | 3–4 | Restaurantes, Menús, Categorías |
 | 3 | 5–6 | Sucursales, Mesas, Pedidos, Reservaciones |
