@@ -1,6 +1,6 @@
 # 🍔 K-Food — Sistema de Gestión de Restaurante
 
-> REST API para la administración de una hamburguesería: pedidos, reservaciones, menús, mesas y más.
+
 
 **Kinal | Práctica Supervisada 2026 | Profesor: Braulio Echeverría**
 
@@ -51,16 +51,16 @@ JWT_AUDIENCE=GestorRestauranteApp
 
 | Módulo | Ruta Base | Operaciones |
 |---|---|---|
-| 🔐 Auth | `/auth` | register, login, profile, users CRUD |
-| 🏢 Restaurantes | `/restaurantes` | CRUD completo |
-| 🏪 Sucursales | `/sucursales` | CRUD + filtro por restaurante |
-| 🪑 Mesas | `/mesas` | CRUD + filtro por sucursal y disponibilidad |
-| 📂 Categorías | `/categorias` | CRUD + filtro por restaurante |
-| 🍔 Menú | `/menus` | CRUD + filtro por restaurante |
-| 🧾 Pedidos | `/pedidos` | Crear, listar, cambiar estado |
-| 📅 Reservaciones | `/reservaciones` | Crear, confirmar, cancelar |
-| 🎉 Eventos | `/eventos` | CRUD + filtro por sucursal |
-| 📊 Estadísticas | `/estadisticas` | Resumen general e ingresos |
+|  Auth | `/auth` | register, login, profile, users CRUD |
+|  Restaurantes | `/restaurantes` | CRUD completo |
+|  Sucursales | `/sucursales` | CRUD + filtro por restaurante |
+|  Mesas | `/mesas` | CRUD + filtro por sucursal y disponibilidad |
+|  Categorías | `/categorias` | CRUD + filtro por restaurante |
+|  Menú | `/menus` | CRUD + filtro por restaurante |
+|  Pedidos | `/pedidos` | Crear, listar, cambiar estado |
+|  Reservaciones | `/reservaciones` | Crear, confirmar, cancelar |
+|  Eventos | `/eventos` | CRUD + filtro por sucursal |
+|  Estadísticas | `/estadisticas` | Resumen general e ingresos |
 
 **Estados de Pedido:** `PENDIENTE` → `EN_PROCESO` → `LISTO` → `ENTREGADO` / `CANCELADO`  
 **Estados de Reservación:** `PENDIENTE` → `CONFIRMADA` → `COMPLETADA` / `CANCELADA`
