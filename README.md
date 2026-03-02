@@ -17,34 +17,6 @@
 
 ---
 
-## 🚀 Instalación
-
-```bash
-git clone https://github.com/tu-usuario/k-food.git
-cd k-food
-pnpm install
-cp .env.example .env   # configurar variables
-node utils/seed-admin.js
-pnpm dev
-```
-
-**Base URL:** `http://localhost:3006/GestorRestaurante/v1`
-
----
-
-## ⚙️ Variables de Entorno
-
-```env
-PORT=3006
-URI_MONGO=mongodb://localhost:27017/gestor_restaurante
-JWT_SECRET=tu_clave_secreta
-JWT_EXPIRES_IN=30m
-JWT_ISSUER=GestorRestaurante
-JWT_AUDIENCE=GestorRestauranteApp
-```
-
----
-
 ## 🔌 Endpoints
 
 > Los endpoints protegidos requieren: `Authorization: Bearer <token>`
